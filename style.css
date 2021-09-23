@@ -12,6 +12,7 @@ a{
 
 body{
     background-color: black;
+    height: 100vh;
 }
 
 .page-content{
@@ -81,6 +82,7 @@ body{
 .social-touch{
     position:sticky;
     bottom: 0;  
+    top: 100%;
 }
 
 .icon-style{
