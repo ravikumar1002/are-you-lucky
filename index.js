@@ -5,6 +5,8 @@ const checkBtn = document.querySelector("#check-btn")
 const displayMsg = document.querySelector("#display-msg")
 const formEl = document.querySelector("#my-form")
 const contentBox = document.querySelector(".content")
+const imgBackground = document.querySelector(".img-background")
+const pageContent = document.querySelector(".page-content")
 
 
 
@@ -16,9 +18,13 @@ function userOutputValue() {
         let birthDateVaule = dobNumberAdd(dobInput)
 
         if (birthDateVaule % luckyNumberInput === 0) {
+            pageContent.style.background = "none"
+            imgBackground.classList.add("img-background-add")
             displayMsg.innerText = "🎉🎊 your birthday is lucky🤩"
             contentBox.style.padding = "1.9rem 3rem"
         } else {
+            pageContent.style.background = "block"
+            imgBackground.classList.remove("img-background-add")
             displayMsg.innerText = "😭😱 your birthday is NOT lucky, so sad 😢"
             contentBox.style.padding = "1.9rem 3rem"
         }
