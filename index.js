@@ -16,10 +16,10 @@ function userOutputValue() {
         let birthDateVaule = dobNumberAdd(dobInput)
 
         if (birthDateVaule % luckyNumberInput === 0) {
-            displayMsg.innerText = "Yay! you are lucky 🤩"
+            displayMsg.innerText = "🎉🎊 Yay! you are lucky 🤩"
             contentBox.style.padding = "1.9rem 3rem"
         } else {
-            displayMsg.innerText = "Sorry but you are unlucky 😢"
+            displayMsg.innerText = "😭😱 Sorry but you are unlucky 😢"
             contentBox.style.padding = "1.9rem 3rem"
         }
     }
