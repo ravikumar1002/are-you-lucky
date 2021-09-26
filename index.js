@@ -8,10 +8,17 @@ const contentBox = document.querySelector(".content")
 const imgBackground = document.querySelector(".img-background")
 const pageContent = document.querySelector(".page-content")
 
+let  today = new Date();
+const dd = String(today.getDate()).padStart(2, '0');
+const mm = String(today.getMonth() + 1).padStart(2, '0'); 
+const yyyy = today.getFullYear();
+today = yyyy + '-' + mm + '-' + dd;
+console.log( today)
 
-
+dateOfBirth.setAttribute("max", `${today}`)
 
 function userOutputValue() {
+
     let dobInput = dateOfBirth.value
     let luckyNumberInput = Number(luckyNumber.value)
     if (dobInput && luckyNumberInput) {
